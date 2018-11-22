@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Upload CSV </title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+
+<h3> Forecast of Goods Price </h3>
+
+<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+
+    <strong>Upload File with Date and Price</strong><br>
+    <input id="file-picker" type="file" name="file" accept=".csv"></input>
+    <input id="date-picker" type="date" name="date" value="2018-02-09"></input>
+    <div id="date-msg"></div>
+    <div id="file-msg"></div>
+    <input type="submit" value="Run!" id="upload-button" disabled ></input>
+</form>
+
+</body>
+<script>
+
+    $("#file-picker").change(function(){
+
+        var input_file  = document.getElementById('file-picker');
+
+            var file_ext=  input_file.files[0].name.substring(input_file.files[0].name.lastIndexOf('.')).toLowerCase()
+
+            if ((file_ext == '.csv') || (file_ext == '.xls'))
+            {
+                $("#file-msg").text("Select Date")
+            }
+            else
+            {
+                $("#file-msg").text("File Type NOT supported")
+                document.getElementById("file-picker").value ="";
+		document.getElementById("upload-button").disabled = true;
+            }
+
+    } );
+
+    $("#date-picker").change(function(){
+
+        var input_date  =  document.getElementById('date-picker')
+	document.getElementById("upload-button").disabled = false;
+
+	$("#date-msg").text(input_date.value)
+	$("#file-msg").text("Click on Run")
+
+	if ((file_ext == '.csv') || (file_ext == '.xls'))
+	{
+	    $("#file-msg").text("Select Date")
+	}
+	else
+	{
+	    $("#file-msg").text("File Type NOT supported")
+	    document.getElementById("file-picker").value ="";
+	    document.getElementById("upload-button").disabled = true;
+	}
+
+    } );
+
+</script>
+</html>
