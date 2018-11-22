@@ -2,7 +2,7 @@
 
 This is the code for dissertation project "Forecast of Goods and Services Demands".
 
-##Usage
+## Usage
 
 In order to run .ipynb this on your local host, you will need to first install all the required packages.
 
