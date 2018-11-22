@@ -10,8 +10,7 @@ In order to run .ipynb this on your local host, you will need to first install a
 
 # In order to run web application, Run this using [Oracle VM VirtualBox](https://www.virtualbox.org).
 
-Steps:
-* Copy and Run dissertation_2016HT13062.vbox (login password: r)
+Steps to Run pred.py :
 * Open terminal
    * cd /home/r/Desktop/proj/src
    * python pred.py
