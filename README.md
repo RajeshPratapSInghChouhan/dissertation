@@ -12,8 +12,8 @@ In order to run web application, Run this using [Oracle VM VirtualBox](https://w
 Copy and Run dissertation_2016HT13062.vbox
 login password: r
 Open terminal
-> cd /home/r/Desktop/proj/src
-> python pred.py
+:> cd /home/r/Desktop/proj/src
+:> python pred.py
 open in browser http://127.0.0.1:8080/
 
 ## Built With
