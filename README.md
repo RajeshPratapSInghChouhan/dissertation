@@ -1,4 +1,3 @@
-# dissertation
 # Overview
 
 This is the code for dissertation project "Forecast of Goods and Services Demands".
