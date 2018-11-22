@@ -5,12 +5,21 @@ This is the code for dissertation project "Forecast of Goods and Services Demand
 ## Usage
 
 In order to run .ipynb this on your local host, you will need to first install all the required packages.
+Run this using [jupyter notebook](http://jupyter.readthedocs.io/en/latest/install.html).
 
-Run this using [jupyter notebook](http://jupyter.readthedocs.io/en/latest/install.html). Just type `jupyter notebook` in the main directory and the code will pop up in a browser window. 
+In order to run web application, Run this using [Oracle VM VirtualBox](https://www.virtualbox.org).
+
+Copy and Run dissertation_2016HT13062.vbox
+login password: r
+Open terminal
+> cd /home/r/Desktop/proj/src
+> python pred.py
+open in browser http://127.0.0.1:8080/
 
 ## Built With
 
 * Python
+* Flask
 * matplotlib
 * Pandas
 * seaborn 
