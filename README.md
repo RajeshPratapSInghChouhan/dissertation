@@ -4,23 +4,18 @@ This is the code for dissertation project "Forecast of Goods and Services Demand
 
 ## Usage
 
+# Run .ipynb using [jupyter notebook](http://jupyter.readthedocs.io/en/latest/install.html).
+
 In order to run .ipynb this on your local host, you will need to first install all the required packages.
 
-Run this using [jupyter notebook](http://jupyter.readthedocs.io/en/latest/install.html).
+# In order to run web application, Run this using [Oracle VM VirtualBox](https://www.virtualbox.org).
 
-In order to run web application, Run this using [Oracle VM VirtualBox](https://www.virtualbox.org).
-
-Copy and Run dissertation_2016HT13062.vbox
-
-login password: r
-
-Open terminal
-
-:> cd /home/r/Desktop/proj/src
-
-:> python pred.py
-
-open in browser http://127.0.0.1:8080/
+Steps:
+* Copy and Run dissertation_2016HT13062.vbox (login password: r)
+* Open terminal
+   * cd /home/r/Desktop/proj/src
+   * python pred.py
+* Open in browser http://127.0.0.1:8080/
 
 ## Built With
 
